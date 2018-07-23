@@ -80,6 +80,11 @@
         </a>
       </li>
     </ul>
+    <ul>
+      <li>
+        <h1 v-on:click="toForm">form</h1>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -89,6 +94,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    toForm: function(){
+      this.$router.push({path: '/form'});
     }
   }
 }
