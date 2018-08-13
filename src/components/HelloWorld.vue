@@ -82,7 +82,8 @@
     </ul>
     <ul>
       <li>
-        <h1 v-on:click="toForm">form</h1>
+        <el-button v-on:click="toForm">form</el-button>
+        <el-button v-on:click="toTreeCheck">tree</el-button>
       </li>
     </ul>
   </div>
@@ -99,7 +100,11 @@ export default {
   methods:{
     toForm: function(){
       this.$router.push({path: '/form'});
+    },
+    toTreeCheck: function(){
+      this.$router.push({path: '/tree'});
     }
+
   }
 }
 </script>
